@@ -1,3 +1,12 @@
+AttrAccessibleBlock 1.0.0
+=========================
+
+Changelog:
+
+        Support for Rails >= 4.0.1, < 5
+        Added protected_attributes gem
+
+
 AttrAccessibleBlock 0.3.2
 =========================
 
@@ -7,7 +16,7 @@ DEPRECATED SINCE >= Rails 4.x
 
 Tested on Rubies: 1.9.3, 2.0.0, 2.1.1 thanks to Travis!
 
-> If you need same functionallity for the Rails 2.3 or Rails 3.0, then use v0.2.2, it's fully tested and ready for this oldies. New version is total rewrite of the previous plugin, but API is the same, so it's easy to migrate if needed.
+> If you need same functionality for the Rails 2.3 or Rails 3.0, then use v0.2.2, it's fully tested and ready for this oldies. New version is total rewrite of the previous plugin, but API is the same, so it's easy to migrate if needed.
 
 Latest version of the gem is only available for the Rails 3.2.x
 

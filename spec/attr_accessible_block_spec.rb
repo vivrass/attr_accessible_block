@@ -69,11 +69,11 @@ describe AttrAccessibleBlock do
 
   it "should support #attr_accessible? with multiple attr_accessible" do
     user = User.new(:name => "User Test", :email => 'test@test.com', :password => 'test', 'date(i0)' => '10', :role => 'admin')
-    user.attr_accessible?(:name).should be_true
-    user.attr_accessible?(:email).should be_true
-    user.attr_accessible?(:password).should be_true
-    user.attr_accessible?(:date).should be_true
-    user.attr_accessible?(:role).should be_false
+    user.attr_accessible?(:name).should be true
+    user.attr_accessible?(:email).should be true
+    user.attr_accessible?(:password).should be true
+    user.attr_accessible?(:date).should be true
+    user.attr_accessible?(:role).should be false
   end
 
   it "should have standard static attr_accessible that always accessible" do
@@ -96,10 +96,10 @@ describe AttrAccessibleBlock do
 
   it "should have block attr_accessible" do
     location = Location.new(:name => 'test', :size => 10, :user => 'user', 'point(i2)' => '10')
-    location.attr_accessible?(:name).should be_true
-    location.attr_accessible?(:size).should be_true
-    location.attr_accessible?(:user).should be_false
-    location.attr_accessible?(:point).should be_false
+    location.attr_accessible?(:name).should be true
+    location.attr_accessible?(:size).should be true
+    location.attr_accessible?(:user).should be false
+    location.attr_accessible?(:point).should be false
   end
 
   it "should have block attr_accessible that always accessible" do

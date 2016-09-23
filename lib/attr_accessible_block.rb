@@ -1,3 +1,5 @@
+require 'protected_attributes'
+require 'active_support/core_ext/array'
 module ActiveModel::MassAssignmentSecurity
   module ClassMethods
     alias_method :old_attr_accessible, :attr_accessible
