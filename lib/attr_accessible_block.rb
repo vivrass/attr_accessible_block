@@ -1,3 +1,7 @@
+# protected attributes needs to be added back in as of rails 4
+require 'protected_attributes' if ActiveModel::VERSION::MAJOR >= 4
+
+require 'active_support/core_ext/array'
 module ActiveModel::MassAssignmentSecurity
   module ClassMethods
     alias_method :old_attr_accessible, :attr_accessible

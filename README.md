@@ -1,11 +1,24 @@
-AttrAccessibleBlock 0.3.1
+AttrAccessibleBlock 1.0.0
 =========================
 
-[![travis-ci status](https://secure.travis-ci.org/dmitry/attr_accessible_block.png)](http://travis-ci.org/dmitry/attr_accessible_block)
+Changelog:
 
-Tested on Rubies: 1.8.7, 1.9.2 and 1.9.3, thanks to Travis!
+        Support for Rails >= 4.0.1, < 5
+        Added protected_attributes gem
 
-> If you need same functionallity for the Rails 2.3 or Rails 3.0, then use v0.2.2, it's fully tested and ready for this oldies. New version is total rewrite of the previous plugin, but API is the same, so it's easy to migrate if needed.
+
+AttrAccessibleBlock 0.3.2
+=========================
+
+DEPRECATED SINCE >= Rails 4.x
+
+[![travis-ci status](https://secure.travis-ci.org/dmitry/attr_accessible_block.png)](http://travis-ci.org/dmitry/attr_accessible_block) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dmitry/attr_accessible_block/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+Tested on Rubies: 1.9.3, 2.0.0, 2.1.1 thanks to Travis!
+
+> If you need same functionality for the Rails 2.3 or Rails 3.0, then use v0.2.2, it's fully tested and ready for this oldies. New version is total rewrite of the previous plugin, but API is the same, so it's easy to migrate if needed.
+
+Latest version of the gem is only available for the Rails 3.2.x
 
 This is an ActiveModel plugin with possibility to define block inside the `attr_accessible` class method. `attr_protected` not supported.
 

@@ -15,7 +15,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = AttrAccessibleBlock::VERSION
 
-  gem.add_dependency "activemodel", '>= 3.1'
+  gem.add_dependency "activemodel", '>= 3.2', '< 5.0'
+  gem.add_dependency "activesupport", '>= 3.2', '< 5.0'
   gem.add_development_dependency "rspec"
   gem.add_development_dependency "rake"
 end
